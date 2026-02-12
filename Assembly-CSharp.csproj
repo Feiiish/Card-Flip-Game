@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\UI\scenceLoader.cs" />
     <Compile Include="Assets\Script\CardFlipper.cs" />
+    <Compile Include="Assets\Script\UI\MenuController.cs" />
     <Compile Include="Assets\Script\CardPlacer.cs" />
     <Compile Include="Assets\Prefabs\GameTracker.cs" />
     <Compile Include="Assets\Script\ScoreManager.cs" />

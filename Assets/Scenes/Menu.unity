@@ -567,7 +567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &294044257
 RectTransform:
   m_ObjectHideFlags: 0
@@ -767,7 +767,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2 * 3
+  m_Text: Start
 --- !u!222 &310195918
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2148,6 +2148,7 @@ GameObject:
   - component: {fileID: 852861235}
   - component: {fileID: 852861234}
   - component: {fileID: 852861233}
+  - component: {fileID: 852861237}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2218,6 +2219,21 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 11
   m_TargetDisplay: 0
+--- !u!114 &852861237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852861232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e8f9c0d1e2f3a4b5c6d7e8f9a0b1c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameTracker: {fileID: 11400000, guid: 98df9a4523c05b740b4d9571da935b75, type: 2}
+  layoutDropdown: {fileID: 0}
+  dropdownParent: {fileID: 0}
 --- !u!224 &852861236
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2773,7 +2789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1033665908
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3222,7 +3238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1263583425
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5213,9 +5229,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1936310211}
-        m_TargetAssemblyTypeName: scenceLoader, Assembly-CSharp
-        m_MethodName: setAndGoToGame
+      - m_Target: {fileID: 852861237}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

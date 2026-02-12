@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -61,8 +62,7 @@ public class ScoreManager : MonoBehaviour
     {
         winingPanel.SetActive(true);
         yield return new WaitForSeconds(4f);
-        scenceLoader loader = new scenceLoader();
-        loader.goToMenu();
+        SceneManager.LoadScene("Menu");
 
     }
 }

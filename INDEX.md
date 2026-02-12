@@ -51,6 +51,7 @@ Core gameplay and UI logic.
 ### `Assets/Script/UI/`
 | Script | Class name | Purpose |
 |--------|------------|--------|
+| **MenuController.cs** | `MenuController` | Menu UI controller: layout dropdown (2×3, 3×4, 4×4) and Start Game button; creates dropdown dynamically if needed; sets `gameTracker.gameSet` and loads "Game". |
 | **scenceLoader.cs** | `scenceLoader` | Scene loading: `scenceName` + raycast click; `setAndGoToGame()` (sets `gameTracker.gameSet`, loads "Game"); `goToMenu()`, `exitApp()`. |
 
 ### `Assets/Settings/`
@@ -80,7 +81,7 @@ Core gameplay and UI logic.
 ## File counts (approximate)
 
 - **Scenes:** 2 (Menu, Game).
-- **C# scripts:** 8 (Card, CardFlipper, CardPlacer, MenuUI, ScoreManager, OnMouseHover, GameTracker, scenceLoader).
+- **C# scripts:** 9 (Card, CardFlipper, CardPlacer, MenuUI, ScoreManager, OnMouseHover, GameTracker, MenuController, scenceLoader).
 - **Prefabs:** Card, Background, Positions, GameTracker asset.
 - **Art:** Emoji card faces, UI/menu images, wallpaper, button.
 
